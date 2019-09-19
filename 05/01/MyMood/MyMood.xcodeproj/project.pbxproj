@@ -18,6 +18,8 @@
 		62262DCF232E4626007CE983 /* ValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62262DCE232E4626007CE983 /* ValueView.swift */; };
 		62262DD1232E4632007CE983 /* ValueSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62262DD0232E4632007CE983 /* ValueSlider.swift */; };
 		62262DD3232E4F89007CE983 /* ToOnePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62262DD2232E4F89007CE983 /* ToOnePlace.swift */; };
+		625741AA233242C800B85231 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625741A9233242C800B85231 /* Emotion.swift */; };
+		625F6E22233337BD00FD24F5 /* MoodInputButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625F6E21233337BD00FD24F5 /* MoodInputButton.swift */; };
 		62FCE2782330DEE800825C65 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCE2772330DEE800825C65 /* Mood.swift */; };
 		62FCE27A2330E79D00825C65 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCE2792330E79D00825C65 /* History.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,8 @@
 		62262DCE232E4626007CE983 /* ValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueView.swift; sourceTree = "<group>"; };
 		62262DD0232E4632007CE983 /* ValueSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueSlider.swift; sourceTree = "<group>"; };
 		62262DD2232E4F89007CE983 /* ToOnePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToOnePlace.swift; sourceTree = "<group>"; };
+		625741A9233242C800B85231 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		625F6E21233337BD00FD24F5 /* MoodInputButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodInputButton.swift; sourceTree = "<group>"; };
 		62FCE2772330DEE800825C65 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		62FCE2792330E79D00825C65 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +116,7 @@
 			children = (
 				62FCE2772330DEE800825C65 /* Mood.swift */,
 				62FCE2792330E79D00825C65 /* History.swift */,
+				625741A9233242C800B85231 /* Emotion.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 				62262DCC232E3B9D007CE983 /* MoodInputView.swift */,
 				62262DCE232E4626007CE983 /* ValueView.swift */,
 				62262DD0232E4632007CE983 /* ValueSlider.swift */,
+				625F6E21233337BD00FD24F5 /* MoodInputButton.swift */,
 			);
 			path = MoodInput;
 			sourceTree = "<group>";
@@ -220,11 +226,13 @@
 				62262DD1232E4632007CE983 /* ValueSlider.swift in Sources */,
 				62FCE27A2330E79D00825C65 /* History.swift in Sources */,
 				62262DAF232E325D007CE983 /* AppDelegate.swift in Sources */,
+				625F6E22233337BD00FD24F5 /* MoodInputButton.swift in Sources */,
 				62262DCD232E3B9D007CE983 /* MoodInputView.swift in Sources */,
 				62262DCB232E3B71007CE983 /* HistoryView.swift in Sources */,
 				62262DD3232E4F89007CE983 /* ToOnePlace.swift in Sources */,
 				62262DB1232E325D007CE983 /* SceneDelegate.swift in Sources */,
 				62262DB3232E325D007CE983 /* MainView.swift in Sources */,
+				625741AA233242C800B85231 /* Emotion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

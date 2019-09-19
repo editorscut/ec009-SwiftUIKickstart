@@ -16,10 +16,8 @@ struct MoodInputView: View {
         VStack {
             ValueView(value: value)
             ValueSlider(value: $value)
-            Button(action: {self.history.add(rating: self.value)}){
-                Text("Record Mood")
-            }
-            
+            MoodInputButton(value: value,
+                            history: history )
         }
     }
 }

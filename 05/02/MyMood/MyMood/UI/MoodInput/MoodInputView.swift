@@ -18,11 +18,9 @@ struct MoodInputView: View {
             ContextInputField(context: $context)
             ValueView(value: value)
             ValueSlider(value: $value)
-            Button(action: {
-                self.history.add(rating: self.value,
-                                 context: self.context)}){
-                                    Text("Record Mood")
-            }
+            MoodInputButton(value: $value,
+                            context: $context,
+                            history: history)
         }
     }
 }

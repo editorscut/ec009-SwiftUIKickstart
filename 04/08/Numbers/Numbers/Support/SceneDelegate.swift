@@ -11,7 +11,6 @@ import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
-    var customTint = CustomTint()
 
 
     func scene(_ scene: UIScene,
@@ -19,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                options connectionOptions: UIScene.ConnectionOptions) {
 
         let contentView = ContentView()
-            .environmentObject(customTint)
+            .environmentObject(CustomTint())
 
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
