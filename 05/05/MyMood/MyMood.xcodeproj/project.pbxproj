@@ -22,6 +22,7 @@
 		625741AD23325C7300B85231 /* MoodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625741AC23325C7300B85231 /* MoodPresenter.swift */; };
 		625F6E2E23334B4400FD24F5 /* MoodInputButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625F6E2D23334B4400FD24F5 /* MoodInputButton.swift */; };
 		625F6E3023334B5600FD24F5 /* LengthWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625F6E2F23334B5600FD24F5 /* LengthWarningView.swift */; };
+		625F6E3C2333828C00FD24F5 /* HistoryPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625F6E3B2333828C00FD24F5 /* HistoryPersistence.swift */; };
 		62FCE2782330DEE800825C65 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCE2772330DEE800825C65 /* Mood.swift */; };
 		62FCE27A2330E79D00825C65 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCE2792330E79D00825C65 /* History.swift */; };
 		62FCE27C2331416700825C65 /* ContextInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCE27B2331416700825C65 /* ContextInputField.swift */; };
@@ -45,6 +46,7 @@
 		625741AC23325C7300B85231 /* MoodPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPresenter.swift; sourceTree = "<group>"; };
 		625F6E2D23334B4400FD24F5 /* MoodInputButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodInputButton.swift; sourceTree = "<group>"; };
 		625F6E2F23334B5600FD24F5 /* LengthWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthWarningView.swift; sourceTree = "<group>"; };
+		625F6E3B2333828C00FD24F5 /* HistoryPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPersistence.swift; sourceTree = "<group>"; };
 		62FCE2772330DEE800825C65 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		62FCE2792330E79D00825C65 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		62FCE27B2331416700825C65 /* ContextInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextInputField.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				62FCE2772330DEE800825C65 /* Mood.swift */,
 				62FCE2792330E79D00825C65 /* History.swift */,
 				625741A123323C7400B85231 /* Emotion.swift */,
+				625F6E3B2333828C00FD24F5 /* HistoryPersistence.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				62262DAF232E325D007CE983 /* AppDelegate.swift in Sources */,
 				62262DCD232E3B9D007CE983 /* MoodInputView.swift in Sources */,
 				62262DCB232E3B71007CE983 /* HistoryView.swift in Sources */,
+				625F6E3C2333828C00FD24F5 /* HistoryPersistence.swift in Sources */,
 				62FCE27C2331416700825C65 /* ContextInputField.swift in Sources */,
 				62262DD3232E4F89007CE983 /* ToOnePlace.swift in Sources */,
 				62262DB1232E325D007CE983 /* SceneDelegate.swift in Sources */,

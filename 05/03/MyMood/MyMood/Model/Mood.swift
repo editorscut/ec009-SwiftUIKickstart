@@ -7,7 +7,7 @@
 //
 import SwiftUI
 
-struct Mood {
+struct Mood: Codable {
     let rating: Double
     let context: String
     let timeStamp = Date()

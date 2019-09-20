@@ -7,6 +7,6 @@
 //
 import SwiftUI
 
-struct Mood {
+struct Mood: Codable {
     let rating: Double
 }
