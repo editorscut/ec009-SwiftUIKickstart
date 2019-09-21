@@ -17,6 +17,6 @@ enum Emotion: String, CaseIterable {
 extension Emotion {
     static func create(with rating: Double) -> Emotion {
         guard (rating >= 0 && rating <= 4) else {return .neutral}
-        return Emotion.allCases[Int((rating + 0.5).rounded())]
+        return Emotion.allCases[Int(rating.rounded())]
     }
 }
