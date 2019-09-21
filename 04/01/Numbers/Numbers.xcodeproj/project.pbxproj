@@ -65,14 +65,14 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		62D1A13723290724001E3091 /* ViewInput */ = {
+		62D1A13723290724001E3091 /* ValueInput */ = {
 			isa = PBXGroup;
 			children = (
 				62E9C9E5232121FD001A598F /* ValueView.swift */,
 				62E9C9E723212208001A598F /* ValueSlider.swift */,
 				62D1A13823290942001E3091 /* ValueInputView.swift */,
 			);
-			path = ViewInput;
+			path = ValueInput;
 			sourceTree = "<group>";
 		};
 		62E9C9C523212189001A598F = {
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				62E9C9D523212189001A598F /* ContentView.swift */,
-				62D1A13723290724001E3091 /* ViewInput */,
+				62D1A13723290724001E3091 /* ValueInput */,
 				62D1A13523290712001E3091 /* Utilities */,
 				62D1A1362329071C001E3091 /* Support */,
 				62E9C9D92321218B001A598F /* Preview Content */,
