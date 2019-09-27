@@ -26,8 +26,8 @@ struct MoodInputButton: View {
 
 extension MoodInputButton {
     private func recordMoodAndResetView() {
-        history.add(rating: self.value,
-                    context: self.context)
+        history.add(rating: value,
+                    context: context)
         value = 2.0
         context = ""
     }

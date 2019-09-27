@@ -18,7 +18,7 @@ struct MoodInputView: View {
             ContextInputField(context: $context)
             LengthWarningView(context: context)
             ValueView(value: value)
-            ValueSlider(value: self.$value)
+            ValueSlider(value: $value)
             MoodInputButton(value: $value,
                             context: $context,
                             history: history)

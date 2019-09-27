@@ -10,24 +10,26 @@ import SwiftUI
 
 struct MoodInputView: View {
     @State private var value = 2.0
-    @State private var context = ""
-    let history: History
+    @ObservedObject var presenter: MoodInputPresenter
     
     var body: some View {
         VStack {
-            ContextInputField(context: $context)
-            LengthWarningView(context: context)
+            Group {
+                ContextInputField(context: $presenter.context)
+                presenter.showWarningViewIfNecessary
+            }
+            .animation(.easeIn)
             ValueView(value: value)
-            ValueSlider(value: self.$value)
-            MoodInputButton(value: $value,
-                            context: $context,
-                            history: history)
+            ValueSlider(value: $value,
+                        rating: $presenter.rating)
+            MoodInputButton(contextIsNotValid: presenter.contextIsNotValid,
+                            save: (presenter.saveMood))
         }
     }
 }
 
 struct MoodInputView_Previews: PreviewProvider {
     static var previews: some View {
-        MoodInputView(history: History())
+        MoodInputView(presenter: MoodInputPresenter(History()))
     }
 }
