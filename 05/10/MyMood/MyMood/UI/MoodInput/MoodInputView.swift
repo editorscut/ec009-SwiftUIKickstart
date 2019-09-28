@@ -18,13 +18,19 @@ struct MoodInputView: View {
             ContextInputField(context: $context)
             LengthWarningView(context: context)
             ValueView(value: value)
-            ValueSlider(value: self.$value)
+            ForEach(0 ..< 4) {_ in
+                ValueSlider(value: self.$value)
+            }
             MoodInputButton(value: $value,
                             context: $context,
                             history: history)
+            ForEach(history.moods
+                .map(MoodPresenter.init(mood:))){presenter in
+                    Text(presenter.context)
+                        .foregroundColor(.purple)
+            }
         }
-    }
-}
+    }}
 
 struct MoodInputView_Previews: PreviewProvider {
     static var previews: some View {

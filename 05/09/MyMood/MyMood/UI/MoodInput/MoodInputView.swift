@@ -26,6 +26,19 @@ struct MoodInputView: View {
     }
 }
 
+//    var body: some View {
+//        VStack {
+//            ContextInputField(context: $context)
+//            LengthWarningView(context: context)
+//            ValueView(value: value)
+//            ValueSlider(value: $value)
+//            MoodInputButton(value: $value,
+//                            context: $context,
+//                            history: history)
+//        }
+//    }
+
+
 struct MoodInputView_Previews: PreviewProvider {
     static var previews: some View {
         MoodInputView(history: History())

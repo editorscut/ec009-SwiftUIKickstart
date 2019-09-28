@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HistoryView: View {
     @ObservedObject var history: History
-    
+
     var mood: Mood? {
         history.moods.first
     }
