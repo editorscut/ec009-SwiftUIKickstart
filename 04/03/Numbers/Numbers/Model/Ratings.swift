@@ -11,3 +11,4 @@ import SwiftUI
 class Ratings: ObservableObject {
     @Published var value = 2.0
 }
+
