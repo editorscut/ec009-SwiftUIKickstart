@@ -17,7 +17,7 @@ struct ContextInputField: View {
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .lineLimit(1)
             .multilineTextAlignment(.center)
-            .padding([.leading, .trailing])
+            .padding(.horizontal)
     }
 }
 
