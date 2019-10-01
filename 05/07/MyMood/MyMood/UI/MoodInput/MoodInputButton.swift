@@ -18,9 +18,9 @@ struct MoodInputButton: View {
     }
     
     var body: some View {
-        Button(action: recordMoodAndResetView){
-            Text("Record Mood")
-        }.disabled(inputIsNotValid)
+        Button("Record Mood",
+               action: recordMoodAndResetView)
+            .disabled(inputIsNotValid)
     }
 }
 

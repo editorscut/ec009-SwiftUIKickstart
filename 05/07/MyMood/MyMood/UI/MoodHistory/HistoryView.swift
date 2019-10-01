@@ -20,10 +20,9 @@ struct HistoryView: View {
         NavigationView {
             List(presenters) {presenter in
                 MoodCell(presenter: presenter)
-                }.navigationBarTitle("Mood History")
-                .navigationBarItems(trailing: Button(action: clear){
-                    Text("Clear")
-                })
+            }.navigationBarTitle("Mood History")
+             .navigationBarItems(trailing: Button("Clear",
+                                                  action: clear))
         }
     }
 }

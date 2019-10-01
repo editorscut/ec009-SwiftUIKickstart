@@ -17,8 +17,8 @@ struct ContentView: View {
                 .font(.title)
                 .foregroundColor(.secondary)
                 .padding()
-            Button(action: greet){
-                Text("Press Here")
+            Button("Press Here"){
+                self.greet()
             }
         }
     }

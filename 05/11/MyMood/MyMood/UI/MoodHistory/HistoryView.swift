@@ -27,10 +27,9 @@ struct HistoryView: View {
                     self.history.remove(at: index)
                 }
             }.navigationBarTitle("Mood History")
-                .navigationBarItems(leading: Button(action: clear){
-                    Text("Clear")
-                }, trailing: EditButton())
-            
+                .navigationBarItems(leading: Button("Clear",
+                                                    action: clear),
+                                    trailing: EditButton())
         }
     }
 }

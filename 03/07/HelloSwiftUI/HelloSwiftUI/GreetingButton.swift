@@ -13,8 +13,8 @@ struct GreetingButton: View {
     @Binding var greeting: String
     
     var body: some View {
-        Button(action: greet){
-            Text("Press Here")
+        Button("Press Here"){
+            self.greet()
         }.disabled(buttonIsDisabled)
     }
     

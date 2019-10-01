@@ -13,8 +13,8 @@ struct MoodInputButton: View {
     let history: History
     
     var body: some View {
-        Button(action: {self.history.add(rating: self.value)}){
-            Text("Record Mood")
+        Button("Record Mood"){
+            self.history.add(rating: self.value)
         }
     }
 }

@@ -16,8 +16,8 @@ struct ContentView: View {
         VStack {
             GreetingLabel(greeting: greeting)
                 .padding()
-            Button(action: greet){
-                Text("Press Here")
+            Button("Press Here"){
+                self.greet()
             }.disabled(buttonIsDisabled)
         }
     }

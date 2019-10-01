@@ -23,9 +23,8 @@ struct HistoryView: View {
                     MoodCell(presenter: presenter)
                 }
             }.navigationBarTitle("Mood History")
-                .navigationBarItems(trailing: Button(action: clear){
-                    Text("Clear")
-                })
+             .navigationBarItems(trailing: Button("Clear",
+                                                  action: clear))
         }
     }
 }

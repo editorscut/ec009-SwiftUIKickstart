@@ -18,13 +18,11 @@ struct MoodInputButton: View {
     }
     
     var body: some View {
-        Button(action: {
+        Button("Record Mood") {
             self.history.add(rating: self.value,
                              context: self.context)
             self.value = 2.0
             self.context = ""
-        }){
-            Text("Record Mood")
         }.disabled(inputIsNotValid)
     }
 }

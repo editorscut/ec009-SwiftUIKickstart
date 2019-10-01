@@ -26,7 +26,10 @@ import SwiftUI
 
 
 struct ContentView: View {
-    let message = UIImage(named: "Cover") != nil ? "A SwiftUI Kickstart" : "Hello"
+    let message
+        = UIImage(named: "Cover") != nil
+            ? "A SwiftUI Kickstart"
+            : "Hello"
     
     var body: some View {
         Text(message)
