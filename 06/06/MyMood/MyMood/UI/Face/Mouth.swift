@@ -20,6 +20,7 @@ struct Mouth: View {
                    alignment: .center)
             .offset(x: 0,
                     y: height/2)
+            .foregroundColor(.black)
     }
     
     var path: Path {

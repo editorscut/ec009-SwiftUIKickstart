@@ -12,8 +12,10 @@ struct Eyes: View {
     var body: some View {
         HStack {
             Circle()
+                .foregroundColor(.black)
             Spacer()
             Circle()
+                .foregroundColor(.black)
         }
     }
 }

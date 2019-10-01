@@ -13,9 +13,9 @@ struct MoodInputButton: View {
     let save: () -> Void
     
     var body: some View {
-        Button(action: save){
-            Text("Record Mood")
-        }.disabled(contextIsNotValid)
+        Button("Record Mood",
+               action: save)
+            .disabled(contextIsNotValid)
     }
 }
 

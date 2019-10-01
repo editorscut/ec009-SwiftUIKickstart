@@ -13,9 +13,11 @@ struct Eyes: View {
         HStack {
             Circle()
                 .scale(0.33)
+                .foregroundColor(.black)
             Spacer()
             Circle()
                 .scale(0.33)
+                .foregroundColor(.black)
         }
         .scaleEffect(0.75,
                      anchor: .center)
