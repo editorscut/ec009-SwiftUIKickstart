@@ -46,7 +46,7 @@ extension MoodInputPresenter {
 }
 
 extension MoodInputPresenter {
-    var showWarningViewIfNecessary: LengthWarningView? {
+    var warningViewIfNecessary: LengthWarningView? {
         contextIsTooLong ? LengthWarningView() : nil
     }
 }

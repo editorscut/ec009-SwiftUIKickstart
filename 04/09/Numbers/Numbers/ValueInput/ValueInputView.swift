@@ -11,7 +11,7 @@ import SwiftUI
 struct ValueInputView: View {
     @State private var value = 2.0
     @State var showingTintSelector = false
-    @EnvironmentObject var customTint: CustomTint
+        @EnvironmentObject var customTint: CustomTint
     
         var body: some View {
             VStack {

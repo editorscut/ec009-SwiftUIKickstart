@@ -21,7 +21,8 @@ struct TintSelector: View {
                     ForEach(0 ..< CustomTint.colors.count) {index in
                         Text(CustomTint.colors[index].description)
                     }
-            }.pickerStyle(SegmentedPickerStyle())
+            }.labelsHidden()
+            //.pickerStyle(SegmentedPickerStyle())
         }
     }
 }

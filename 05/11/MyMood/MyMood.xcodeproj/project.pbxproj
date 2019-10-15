@@ -140,7 +140,6 @@
 		62262DC5232E3288007CE983 /* MoodInput */ = {
 			isa = PBXGroup;
 			children = (
-				62262DCC232E3B9D007CE983 /* MoodInputView.swift */,
 				62262DCE232E4626007CE983 /* ValueView.swift */,
 				62262DD0232E4632007CE983 /* ValueSlider.swift */,
 				62FCE27B2331416700825C65 /* ContextInputField.swift */,
@@ -164,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				62262DB2232E325D007CE983 /* MainView.swift */,
+				62262DCC232E3B9D007CE983 /* MoodInputView.swift */,
 				62262DC5232E3288007CE983 /* MoodInput */,
 				62262DC6232E32A8007CE983 /* MoodHistory */,
 			);

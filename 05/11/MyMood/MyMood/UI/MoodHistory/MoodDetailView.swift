@@ -20,7 +20,8 @@ struct MoodDetailView: View {
                 .font(.headline)
                 .padding()
             Text(presenter.date)
-        }.navigationBarTitle("Rating: \(presenter.rating)")
+        }
+        .navigationBarTitle("Rating: \(presenter.rating)")
     }
 }
 

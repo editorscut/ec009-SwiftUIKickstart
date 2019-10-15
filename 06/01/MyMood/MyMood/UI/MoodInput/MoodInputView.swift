@@ -16,7 +16,7 @@ struct MoodInputView: View {
         VStack {
             Group {
                 ContextInputField(context: $presenter.context)
-                presenter.showWarningViewIfNecessary
+                presenter.warningViewIfNecessary
             }
             .animation(.easeIn)
             ValueView(value: value)
