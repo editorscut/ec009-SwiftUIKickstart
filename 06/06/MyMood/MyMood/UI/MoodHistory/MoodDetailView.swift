@@ -17,10 +17,10 @@ struct MoodDetailView: View {
                 .font(.largeTitle)
                 .foregroundColor(.secondary)
                 .padding(.top)
-            FaceView(value: presenter.rawRating)
+            FaceView(value: presenter.value)
             Text(presenter.emotion)
                 .font(.headline)
-                .padding(.bottom)
+                .padding()
             Text(presenter.date)
         }.navigationBarTitle("Rating: \(presenter.rating)")
     }

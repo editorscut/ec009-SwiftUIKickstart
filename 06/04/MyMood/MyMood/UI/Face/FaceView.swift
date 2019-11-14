@@ -2,7 +2,7 @@
 //  FaceView.swift
 //  MyMood
 //
-//  Created by Daniel Steinberg on 9/25/19.
+//  Created by Daniel Steinberg on 11/12/19.
 //  Copyright © 2019 Dim Sum Thinking. All rights reserved.
 //
 
@@ -21,6 +21,6 @@ struct FaceView: View {
 
 struct FaceView_Previews: PreviewProvider {
     static var previews: some View {
-        FaceView(value: 2.4)
+        FaceView(value: 2.0)
     }
 }

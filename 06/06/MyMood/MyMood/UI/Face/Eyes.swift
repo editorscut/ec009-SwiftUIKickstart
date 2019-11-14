@@ -2,7 +2,7 @@
 //  Eyes.swift
 //  MyMood
 //
-//  Created by Daniel Steinberg on 9/25/19.
+//  Created by Daniel Steinberg on 11/12/19.
 //  Copyright © 2019 Dim Sum Thinking. All rights reserved.
 //
 
@@ -28,6 +28,6 @@ struct Eyes: View {
 
 struct Eyes_Previews: PreviewProvider {
     static var previews: some View {
-        Eyes(side: 4.0)
+        Eyes(side: 100)
     }
 }

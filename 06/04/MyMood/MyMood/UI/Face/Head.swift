@@ -2,7 +2,7 @@
 //  Head.swift
 //  MyMood
 //
-//  Created by Daniel Steinberg on 9/24/19.
+//  Created by Daniel Steinberg on 11/12/19.
 //  Copyright © 2019 Dim Sum Thinking. All rights reserved.
 //
 

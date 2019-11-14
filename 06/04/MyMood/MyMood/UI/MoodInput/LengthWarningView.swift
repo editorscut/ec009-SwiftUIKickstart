@@ -11,7 +11,7 @@ import SwiftUI
 struct LengthWarningView: View {
     
     var body: some View {
-        Text("(Too many characters)")
+        Text("(Must be less than 30 characters)")
             .foregroundColor(.red)
             .padding(.bottom)
     }

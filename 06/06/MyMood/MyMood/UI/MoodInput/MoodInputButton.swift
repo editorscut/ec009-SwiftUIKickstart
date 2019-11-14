@@ -11,7 +11,7 @@ import SwiftUI
 struct MoodInputButton: View {
     let contextIsNotValid: Bool
     let save: () -> Void
-    
+        
     var body: some View {
         Button("Record Mood",
                action: save)

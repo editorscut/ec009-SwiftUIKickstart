@@ -34,7 +34,8 @@ extension MoodPresenter {
     var date: String {
         dateFormatter.string(from: mood.timeStamp)
     }
-    var rawRating: Double {
+    
+    var value: Double {
         mood.rating
     }
 }

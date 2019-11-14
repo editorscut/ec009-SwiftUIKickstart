@@ -2,7 +2,7 @@
 //  Eyes.swift
 //  MyMood
 //
-//  Created by Daniel Steinberg on 9/25/19.
+//  Created by Daniel Steinberg on 11/12/19.
 //  Copyright © 2019 Dim Sum Thinking. All rights reserved.
 //
 
@@ -18,10 +18,9 @@ struct Eyes: View {
             Circle()
                 .scale(0.33)
                 .foregroundColor(.black)
-        }
-        .scaleEffect(0.75,
-                     anchor: .center)
-        .offset(x: 0, y: -50)
+        }.scaleEffect(0.75,
+                      anchor: .center)
+            .offset(x: 0, y: -50)
     }
 }
 

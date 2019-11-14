@@ -2,18 +2,18 @@
 //  MoodInputPresenter.swift
 //  MyMood
 //
-//  Created by Daniel Steinberg on 9/23/19.
+//  Created by Daniel Steinberg on 11/6/19.
 //  Copyright © 2019 Dim Sum Thinking. All rights reserved.
 //
 
 import SwiftUI
 
 let defaultContext = ""
-let defaultRating = 2.0
+let defaultValue = 2.0
 
 class MoodInputPresenter: ObservableObject {
     @Published var context = defaultContext
-    var rating = defaultRating
+    @Published var value = defaultValue
     
     private let history: History
     
@@ -26,7 +26,6 @@ extension MoodInputPresenter {
     var contextIsTooLong: Bool {
         context.count > 30
     }
-    
     var contextIsNotValid: Bool {
         context.isEmpty || contextIsTooLong
     }
@@ -34,19 +33,19 @@ extension MoodInputPresenter {
 
 extension MoodInputPresenter {
     func saveMood() {
-        history.add(rating: rating,
+        history.add(rating: value,
                     context: context)
         reset()
     }
     
     private func reset() {
         context = defaultContext
-        rating = defaultRating
+        value = defaultValue
     }
 }
 
 extension MoodInputPresenter {
-    var showWarningViewIfNecessary: LengthWarningView? {
+    var warningViewIfNecessary: LengthWarningView? {
         contextIsTooLong ? LengthWarningView() : nil
     }
 }

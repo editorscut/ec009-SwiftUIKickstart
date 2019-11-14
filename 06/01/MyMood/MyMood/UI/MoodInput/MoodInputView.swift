@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct MoodInputView: View {
-    @State private var value = 2.0
     @ObservedObject var presenter: MoodInputPresenter
     
     var body: some View {
@@ -19,11 +18,10 @@ struct MoodInputView: View {
                 presenter.warningViewIfNecessary
             }
             .animation(.easeIn)
-            ValueView(value: value)
-            ValueSlider(value: $value,
-                        rating: $presenter.rating)
+            ValueView(value: presenter.value)
+            ValueSlider(value: $presenter.value)
             MoodInputButton(contextIsNotValid: presenter.contextIsNotValid,
-                            save: (presenter.saveMood))
+                            save: presenter.saveMood)
         }
     }
 }

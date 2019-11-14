@@ -30,7 +30,6 @@ struct HistoryView: View {
                 .navigationBarItems(leading: Button("Clear",
                                                     action: clear),
                                     trailing: EditButton())
-            
         }
     }
 }

@@ -9,21 +9,19 @@
 import SwiftUI
 
 struct MoodInputView: View {
-    @State private var value = 2.0
     @ObservedObject var presenter: MoodInputPresenter
     
     var body: some View {
         VStack {
             Group {
                 ContextInputField(context: $presenter.context)
-                presenter.showWarningViewIfNecessary
+                presenter.warningViewIfNecessary
             }
             .animation(.easeIn)
-            FaceView(value: value)
-            ValueSlider(value: $value,
-                        rating: $presenter.rating)
+            FaceView(value: presenter.value)
+            ValueSlider(value: $presenter.value)
             MoodInputButton(contextIsNotValid: presenter.contextIsNotValid,
-                            save: (presenter.saveMood))
+                            save: presenter.saveMood)
         }
     }
 }

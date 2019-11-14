@@ -12,7 +12,7 @@ struct LengthWarningView: View {
     let tooLong: Bool
     
     var body: some View {
-        Text("(Too many characters)")
+        Text("(Must be less than 30 characters)")
             .foregroundColor(tooLong ? .red : .secondary)
             .padding(.bottom)
     }
@@ -20,6 +20,6 @@ struct LengthWarningView: View {
 
 struct LengthWarningView_Previews: PreviewProvider {
     static var previews: some View {
-        LengthWarningView(tooLong: true)
+        LengthWarningView(tooLong: false)
     }
 }
