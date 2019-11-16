@@ -17,20 +17,23 @@ struct ValueInputView: View {
         VStack {
             Spacer()
             ValueView(value: value)
+                .gesture(TapGesture(count: 2)
+                .onEnded{ self.showingTintSelector.toggle()
+                }
+            )
             ValueSlider(value: $value)
             Spacer()
             HStack {
                 Button(action: {self.showingTintSelector.toggle()}){
                     Image(systemName: "gear")
-                        .font(.system(size: 40))
-                        .foregroundColor(.secondary)
                 }
-                .accessibility(label:
-                    Text("Custom Tint Color Adjustment"))
+                .foregroundColor(.secondary)
+                .font(.largeTitle)
                 Spacer()
             }.padding()
         }.sheet(isPresented: $showingTintSelector){
-            TintSelector(showingTintSelector: self.$showingTintSelector)
+            DismisserView(containedView: TintSelector(),
+                          showingTintSelector: self.$showingTintSelector)
                 .environmentObject(self.customTint)
         }
     }

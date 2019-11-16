@@ -10,11 +10,9 @@ import SwiftUI
 
 struct TintSelector: View {
     @EnvironmentObject private var customTint: CustomTint
-    @Binding var showingTintSelector: Bool
 
     var body: some View {
         VStack {
-            Spacer()
             Text("Selected Tint Color")
                 .font(.largeTitle)
                 .foregroundColor(customTint.color)
@@ -24,17 +22,12 @@ struct TintSelector: View {
                         Text(CustomTint.colors[index].description)
                     }
             }.pickerStyle(SegmentedPickerStyle())
-            Spacer()
-            Button(action: {self.showingTintSelector = false}){
-                Text("Dismiss")
-                    .accentColor(customTint.color)
-            }
         }
     }
 }
 
 struct TintSelector_Previews: PreviewProvider {
     static var previews: some View {
-        TintSelector(showingTintSelector: .constant(false)).environmentObject(CustomTint())
+        TintSelector()
     }
 }

@@ -11,6 +11,7 @@
 		62037125232C109C00505156 /* TintSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62037124232C109C00505156 /* TintSelector.swift */; };
 		62037127232C165C00505156 /* CustomTint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62037126232C165C00505156 /* CustomTint.swift */; };
 		6215050D2321748200F7FC7D /* Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6215050C2321748200F7FC7D /* Rounding.swift */; };
+		625E6BE923804D7F00B8C798 /* DismisserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E6BE823804D7F00B8C798 /* DismisserView.swift */; };
 		62D1A13923290942001E3091 /* ValueInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D1A13823290942001E3091 /* ValueInputView.swift */; };
 		62E9C9D223212189001A598F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E9C9D123212189001A598F /* AppDelegate.swift */; };
 		62E9C9D423212189001A598F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E9C9D323212189001A598F /* SceneDelegate.swift */; };
@@ -28,6 +29,7 @@
 		62037124232C109C00505156 /* TintSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintSelector.swift; sourceTree = "<group>"; };
 		62037126232C165C00505156 /* CustomTint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTint.swift; sourceTree = "<group>"; };
 		6215050C2321748200F7FC7D /* Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rounding.swift; sourceTree = "<group>"; };
+		625E6BE823804D7F00B8C798 /* DismisserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismisserView.swift; sourceTree = "<group>"; };
 		62D1A13823290942001E3091 /* ValueInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueInputView.swift; sourceTree = "<group>"; };
 		62E9C9CE23212189001A598F /* Numbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Numbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E9C9D123212189001A598F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				62D1A13823290942001E3091 /* ValueInputView.swift */,
 				62037122232A735900505156 /* LastRecordedValue.swift */,
 				62037124232C109C00505156 /* TintSelector.swift */,
+				625E6BE823804D7F00B8C798 /* DismisserView.swift */,
 			);
 			path = ValueInput;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				62E9C9D223212189001A598F /* AppDelegate.swift in Sources */,
 				62037127232C165C00505156 /* CustomTint.swift in Sources */,
 				62D1A13923290942001E3091 /* ValueInputView.swift in Sources */,
+				625E6BE923804D7F00B8C798 /* DismisserView.swift in Sources */,
 				62E9C9D423212189001A598F /* SceneDelegate.swift in Sources */,
 				62E9C9E823212208001A598F /* ValueSlider.swift in Sources */,
 				62037125232C109C00505156 /* TintSelector.swift in Sources */,

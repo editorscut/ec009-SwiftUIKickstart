@@ -11,26 +11,21 @@ import SwiftUI
 struct ValueInputView: View {
     @State private var value = 2.0
     @State var showingTintSelector = false
-        @EnvironmentObject var customTint: CustomTint
+    @EnvironmentObject var customTint: CustomTint
     
-        var body: some View {
-            VStack {
-                Spacer()
-                ValueView(value: value)
-                ValueSlider(value: $value)
-                Spacer()
-                HStack {
-                    Button(action: {self.showingTintSelector.toggle()}){
-                        Image(systemName: "gear")
-                            .foregroundColor(.secondary)
-                    }
-                    Spacer()
-                }.padding()
-            }.sheet(isPresented: $showingTintSelector){
-                TintSelector(showingTintSelector: self.$showingTintSelector)
-                    .environmentObject(self.customTint)
-            }
+    var body: some View {
+        VStack {
+            ValueView(value: value)
+                .gesture(TapGesture(count: 2)
+                .onEnded{ self.showingTintSelector.toggle()
+                }
+            )
+            ValueSlider(value: $value)
+        }.sheet(isPresented: $showingTintSelector){
+            TintSelector()
+                .environmentObject(self.customTint)
         }
+    }
 }
 
 struct ValueInputView_Previews: PreviewProvider {
