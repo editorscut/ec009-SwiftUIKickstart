@@ -10,19 +10,19 @@ import SwiftUI
 
 struct ValueInputView: View {
     @State private var value = 2.0
-    let ratings: Ratings
+    let rating: Rating
     
     var body: some View {
         VStack {
             ValueView(value: value)
             ValueSlider(value: $value,
-                        ratings: ratings)
+                        rating: rating)
         }
     }
 }
 
 struct ValueInputView_Previews: PreviewProvider {
     static var previews: some View {
-        ValueInputView(ratings: Ratings())
+        ValueInputView(rating: Rating())
     }
 }

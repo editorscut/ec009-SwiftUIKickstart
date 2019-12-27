@@ -10,14 +10,14 @@ import SwiftUI
 
 struct ValueSlider: View {
     @Binding var value: Double
-    var ratings: Ratings
+    var rating: Rating
     
     var body: some View {
         Slider(value: $value,
                in: 0.0 ... 4.0,
                step: 0.0001){sliderIsEngaged in
                 if !sliderIsEngaged {
-                    self.ratings.value = self.value
+                    self.rating.value = self.value
                 }
         }
     }
@@ -25,6 +25,6 @@ struct ValueSlider: View {
 
 struct ValueSlider_Previews: PreviewProvider {
     static var previews: some View {
-        ValueSlider(value: .constant(2.0), ratings: Ratings())
+        ValueSlider(value: .constant(2.0), rating: Rating())
     }
 }

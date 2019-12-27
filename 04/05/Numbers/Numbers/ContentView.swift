@@ -9,18 +9,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    private let ratings = Ratings()
+    private let rating = Rating()
     
     var body: some View {
         TabView {
-            ValueInputView(ratings: ratings)
+            ValueInputView(rating: rating)
                 .tabItem{
                     VStack {
                         Text("Input")
                         Image(systemName: "arrow.right.arrow.left")
                     }
             }
-            LastRecordedValue(ratings: ratings)
+            LastRecordedValue(rating: rating)
                 .tabItem{
                     VStack {
                         Text("Previous")

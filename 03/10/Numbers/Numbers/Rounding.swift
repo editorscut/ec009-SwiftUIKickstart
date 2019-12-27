@@ -10,6 +10,7 @@
 
 struct RoundedTo {
     private var value: Double = 0
+    private let multipliers = [1.0, 10, 100, 1000]
     private var multiplier: Double = 1
     
     var wrappedValue: Double {
@@ -21,9 +22,10 @@ struct RoundedTo {
         }
     }
     
-    init(wrappedValue initialValue: Double, _ precision: Int) {
-        guard precision >= 0 && precision <= 3 else {fatalError("Rounding is only supported for precision 0, 1, 2, or 3")}
-        multiplier = [1, 10, 100, 1000][precision]
+    init(wrappedValue initialValue: Double,
+         _ precision: Int) {
+        guard multipliers.indices.contains(precision) else {fatalError("Rounding is only supported for precision 0 - \(multipliers.count + 1)")}
+        multiplier = multipliers[precision]
         self.wrappedValue = initialValue
     }
 }

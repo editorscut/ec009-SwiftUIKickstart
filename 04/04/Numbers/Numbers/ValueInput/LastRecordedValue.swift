@@ -9,10 +9,10 @@
 import SwiftUI
 
 struct LastRecordedValue: View {
-    @ObservedObject var ratings: Ratings
+    @ObservedObject var rating: Rating
     
     var body: some View {
-        Text("Last Reading: \(ratings.value)")
+        Text("Last Reading: \(rating.value)")
             .foregroundColor(.secondary)
             .padding()
     }
@@ -20,6 +20,6 @@ struct LastRecordedValue: View {
 
 struct LastRecordedValue_Previews: PreviewProvider {
     static var previews: some View {
-        LastRecordedValue(ratings: Ratings())
+        LastRecordedValue(rating: Rating())
     }
 }

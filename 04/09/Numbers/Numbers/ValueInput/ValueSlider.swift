@@ -16,7 +16,7 @@ struct ValueSlider: View {
                in: 0.0 ... 4.0,
                step: 0.0001){sliderIsEngaged in
                 if !sliderIsEngaged {
-                    ratings.value = self.value
+                    rating.value = self.value
                 }
         }
     }
