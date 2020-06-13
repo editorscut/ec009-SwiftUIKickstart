@@ -24,7 +24,7 @@ struct RoundedTo {
     
     init(wrappedValue initialValue: Double,
          _ precision: Int) {
-        guard multipliers.indices.contains(precision) else {fatalError("Rounding is only supported for precision 0 - \(multipliers.count + 1)")}
+        guard multipliers.indices.contains(precision) else {fatalError("Rounding is only supported for precision 0 - \(multipliers.count - 1)")}
         multiplier = multipliers[precision]
         self.wrappedValue = initialValue
     }
