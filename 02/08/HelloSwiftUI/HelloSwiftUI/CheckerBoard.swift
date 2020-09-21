@@ -1,46 +1,52 @@
 //
 //  CheckerBoard.swift
-//  TheCall
+//  HelloSwiftUI
 //
-//  Created by Daniel Steinberg on 8/23/19.
-//  Copyright © 2019 Dim Sum Thinking. All rights reserved.
+//  Created by Daniel Steinberg on 9/21/20.
 //
 
 import SwiftUI
 
-struct CheckerBoard: View  {
-    let firstView: Image
-    let secondView: some View = Rectangle()
-    
-    var body: some View {
-        VStack {
-            HStack {
-                firstView
-                secondView
-            }
-            HStack {
-                secondView
-                firstView
-            }
-        }
-    }
+struct CheckerBoard {
+  let firstView: Text
+  let secondView: some View = Rectangle()
+}
 
-    init(@CheckerBoardBuilder builder: () -> (Image)) {
-        firstView = builder()
+extension CheckerBoard: View {
+  var body: some View {
+    VStack {
+      HStack {
+        firstView
+          .frame(minWidth: 0,
+                 maxWidth: .infinity)
+        secondView
+      }
+      HStack {
+        secondView
+        firstView
+          .frame(minWidth: 0,
+                 maxWidth: .infinity)
+      }
     }
+  }
+}
+
+extension CheckerBoard {
+  init(@CheckerBoardBuilder builder: () -> Text) {
+    firstView = builder()
+  }
 }
 
 @_functionBuilder
 struct CheckerBoardBuilder {
-    static func buildBlock(_ image: Image) -> Image {
-        image
-    }
+  static func buildBlock(_ text: Text) -> Text {
+    text
+  }
 }
 
-//struct CheckerBoard_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CheckerBoard {
-//            Image("Cover")
-//        }
-//    }
-//}
+struct CheckerBoard_Previews: PreviewProvider {
+  static var previews: some View {
+    CheckerBoard(firstView: Text("Fun"))
+      .previewLayout(.sizeThatFits)
+  }
+}

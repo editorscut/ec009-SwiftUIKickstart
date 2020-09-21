@@ -2,17 +2,15 @@
 //  ContentView.swift
 //  HelloSwiftUI
 //
-//  Created by Daniel Steinberg on 9/7/19.
-//  Copyright © 2019 Dim Sum Thinking. All rights reserved.
+//  Created by Daniel Steinberg on 9/18/20.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        print("Executing body")
-        return Text("Hello World")
-    }
+  var body: some View {
+    Text("Hello")
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {

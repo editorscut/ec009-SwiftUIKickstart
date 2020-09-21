@@ -1,15 +1,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        CheckerBoard {
-            Image("Cover")
-        }
+  var body: some View {
+    CheckerBoard {
+      Text("FDD")
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+      .previewLayout(.sizeThatFits)
+  }
 }
+
