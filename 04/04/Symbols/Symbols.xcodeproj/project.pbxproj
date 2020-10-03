@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		628B60492528AD120017CA2B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B60482528AD120017CA2B /* Utilities.swift */; };
 		62D2C6312520E09600FAB18D /* SymbolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2C6302520E09600FAB18D /* SymbolsApp.swift */; };
 		62D2C6332520E09600FAB18D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2C6322520E09600FAB18D /* ContentView.swift */; };
 		62D2C6352520E09900FAB18D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D2C6342520E09900FAB18D /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		628B60482528AD120017CA2B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		62D2C62D2520E09600FAB18D /* Symbols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Symbols.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D2C6302520E09600FAB18D /* SymbolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsApp.swift; sourceTree = "<group>"; };
 		62D2C6322520E09600FAB18D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				62D2C6462520ECCC00FAB18D /* ObjectsAndTools.swift */,
 				62D2C6512522741800FAB18D /* Symbol.swift */,
+				628B60482528AD120017CA2B /* Utilities.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			files = (
 				62D2C6332520E09600FAB18D /* ContentView.swift in Sources */,
 				62D2C64B25221FD500FAB18D /* SystemLabel.swift in Sources */,
+				628B60492528AD120017CA2B /* Utilities.swift in Sources */,
 				62D2C6472520ECCC00FAB18D /* ObjectsAndTools.swift in Sources */,
 				62D2C64E25222A9E00FAB18D /* SurroundStyle.swift in Sources */,
 				62D2C6312520E09600FAB18D /* SymbolsApp.swift in Sources */,
