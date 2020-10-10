@@ -1,10 +1,3 @@
-//
-//  Eyes.swift
-//  Mood
-//
-//  Created by Daniel Steinberg on 10/8/20.
-//
-
 import SwiftUI
 
 struct Eyes {

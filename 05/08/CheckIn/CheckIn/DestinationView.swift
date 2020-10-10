@@ -1,10 +1,3 @@
-//
-//  DestinationView.swift
-//  CheckIn
-//
-//  Created by Daniel Steinberg on 10/7/20.
-//
-
 import SwiftUI
 
 struct DestinationView {

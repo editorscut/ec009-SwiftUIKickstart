@@ -1,10 +1,3 @@
-//
-//  History.swift
-//  CheckIn
-//
-//  Created by Daniel Steinberg on 10/5/20.
-//
-
 class History {
   private(set) var snapshots = [Snapshot]() {
     didSet {
