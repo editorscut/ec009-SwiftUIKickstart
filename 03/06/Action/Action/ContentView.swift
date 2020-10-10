@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Action
-//
-//  Created by Daniel Steinberg on 9/22/20.
-//
-
 import SwiftUI
 
 let increments = [1, 2, 3, 5, 10]

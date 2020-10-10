@@ -1,10 +1,3 @@
-//
-//  DesignerSlider.swift
-//  Action
-//
-//  Created by Daniel Steinberg on 9/25/20.
-//
-
 import SwiftUI
 
 struct DesignerSlider {

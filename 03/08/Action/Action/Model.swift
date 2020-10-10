@@ -1,10 +1,3 @@
-//
-//  Model.swift
-//  Action
-//
-//  Created by Daniel Steinberg on 9/25/20.
-//
-
 struct Model {
   let value: Int
 }

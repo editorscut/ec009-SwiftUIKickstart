@@ -1,10 +1,3 @@
-//
-//  DoubleDisplay.swift
-//  Action
-//
-//  Created by Daniel Steinberg on 9/26/20.
-//
-
 import SwiftUI
 
 struct DoubleDisplay {

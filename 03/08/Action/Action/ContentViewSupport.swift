@@ -1,10 +1,3 @@
-//
-//  ContentViewSupport.swift
-//  Action
-//
-//  Created by Daniel Steinberg on 9/25/20.
-//
-
 import SwiftUI
 
 class ContentViewSupport: ObservableObject {

@@ -1,10 +1,3 @@
-//
-//  StringDisplay.swift
-//  Action
-//
-//  Created by Daniel Steinberg on 9/24/20.
-//
-
 import SwiftUI
 
 struct StringDisplay {

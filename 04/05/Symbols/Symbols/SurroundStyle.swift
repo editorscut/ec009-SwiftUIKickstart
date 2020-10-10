@@ -1,10 +1,3 @@
-//
-//  SurroundStyle.swift
-//  Symbols
-//
-//  Created by Daniel Steinberg on 9/28/20.
-//
-
 import SwiftUI
 
 struct SurroundStyle: LabelStyle {

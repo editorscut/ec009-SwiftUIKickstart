@@ -1,10 +1,3 @@
-//
-//  Node.swift
-//  Symbols
-//
-//  Created by Daniel Steinberg on 9/30/20.
-//
-
 import Foundation
 
 let roots

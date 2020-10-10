@@ -1,10 +1,3 @@
-//
-//  Rounding.swift
-//  Action
-//
-//  Created by Daniel Steinberg on 9/26/20.
-//
-
 @propertyWrapper
 
 struct Rounding {

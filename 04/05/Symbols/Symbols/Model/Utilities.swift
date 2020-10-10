@@ -1,10 +1,3 @@
-//
-//  Utilities.swift
-//  Symbols
-//
-//  Created by Daniel Steinberg on 9/30/20.
-//
-
 import Foundation
 
 extension Array where Element: Hashable{

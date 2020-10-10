@@ -1,10 +1,3 @@
-//
-//  DisclosedGrid.swift
-//  Symbols
-//
-//  Created by Daniel Steinberg on 10/1/20.
-//
-
 import SwiftUI
 
 struct DisclosedGrid {
