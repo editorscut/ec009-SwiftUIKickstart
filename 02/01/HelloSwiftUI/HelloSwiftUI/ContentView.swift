@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  HelloSwiftUI
-//
-//  Created by Daniel Steinberg on 9/18/20.
-//
-
 import SwiftUI
 
 struct ContentView: View {

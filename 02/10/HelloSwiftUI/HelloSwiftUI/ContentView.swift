@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    CheckerBoard {
+    CheckerBoard(backgroundColor: .green) {
       Image("Cover")
         .resizable()
         .scaledToFit()

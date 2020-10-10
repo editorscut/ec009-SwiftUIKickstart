@@ -1,10 +1,3 @@
-//
-//  CheckerBoard.swift
-//  HelloSwiftUI
-//
-//  Created by Daniel Steinberg on 9/21/20.
-//
-
 import SwiftUI
 
 struct CheckerBoard<A, B> where A: View, B: View {
