@@ -35,9 +35,9 @@ func subNodeNames(for name: String) -> [String] {
 }
 
 
-func symbolNames(startingWith root: String) -> [String] {
+func symbolNames(startingWith nodes: String) -> [String] {
   symbolNames
     .filter{symbolName in
-      symbolName.split(separator: separator).first! == root
+      symbolName.split(separator: separator).starts(with: nodes.split(separator: separator))
     }
 }
