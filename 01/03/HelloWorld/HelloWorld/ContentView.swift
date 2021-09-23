@@ -8,7 +8,6 @@ struct ContentView: View {
         .fontWeight(.bold)
         .foregroundColor(Color.red)
         .padding(.bottom)
-        .background(Color.yellow)
       HStack {
         Button(action: {}) {
           Text("Button")
@@ -22,8 +21,8 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-          .preferredColorScheme(.light )
-    }
+  static var previews: some View {
+    ContentView()
+      .previewLayout(.device)
+  }
 }
