@@ -2,7 +2,7 @@ import SwiftUI
 
 struct CheckerBoard {
   let firstView: Text
-  let secondView: some View = Rectangle()
+  let secondView = Rectangle()
 }
 
 extension CheckerBoard: View {
@@ -10,8 +10,7 @@ extension CheckerBoard: View {
     VStack {
       HStack {
         firstView
-          .frame(minWidth: 0,
-                 maxWidth: .infinity)
+          .frame(minWidth: 0, maxWidth: .infinity)
         secondView
       }
       HStack {
@@ -30,7 +29,7 @@ extension CheckerBoard {
   }
 }
 
-@_functionBuilder
+@resultBuilder
 struct CheckerBoardBuilder {
   static func buildBlock(_ text: Text) -> Text {
     text
@@ -39,7 +38,6 @@ struct CheckerBoardBuilder {
 
 struct CheckerBoard_Previews: PreviewProvider {
   static var previews: some View {
-    CheckerBoard(firstView: Text("Fun"))
-      .previewLayout(.sizeThatFits)
+    CheckerBoard(firstView: Text("Kickstart"))
   }
 }

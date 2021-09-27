@@ -6,7 +6,7 @@ struct ContentView: View {
       Image("Cover")
         .resizable()
         .scaledToFit()
-      Text("FDD")
+      Text("Kickstart")
     }
   }
 }
@@ -17,4 +17,3 @@ struct ContentView_Previews: PreviewProvider {
       .previewLayout(.sizeThatFits)
   }
 }
-

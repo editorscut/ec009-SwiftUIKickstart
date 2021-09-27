@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
+  let hasImage = true
   
   var body: some View {
     Image("Cover")
@@ -15,4 +16,3 @@ struct ContentView_Previews: PreviewProvider {
     ContentView()
   }
 }
-

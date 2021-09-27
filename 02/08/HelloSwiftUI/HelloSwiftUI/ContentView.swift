@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     CheckerBoard {
-      Text("FDD")
+      Text("Kickstart")
     }
   }
 }
@@ -14,4 +14,3 @@ struct ContentView_Previews: PreviewProvider {
       .previewLayout(.sizeThatFits)
   }
 }
-

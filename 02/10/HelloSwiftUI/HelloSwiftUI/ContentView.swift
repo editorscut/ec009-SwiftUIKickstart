@@ -2,11 +2,11 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    CheckerBoard(backgroundColor: .green) {
+    CheckerBoard(backgroundColor: .indigo) {
       Image("Cover")
         .resizable()
         .scaledToFit()
-      Text("FDD")
+      Text("Kickstart")
     }
   }
 }
@@ -14,7 +14,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
-      .previewLayout(.device)
+      .previewLayout(.sizeThatFits)
   }
 }
-
