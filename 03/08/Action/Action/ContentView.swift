@@ -1,27 +1,37 @@
 import SwiftUI
 
 struct ContentView {
-  @ObservedObject var support: ContentViewSupport
+  @State private var currentValue = 0
+  @State private var horizontalSpace = 0.0
 }
 
 extension ContentView: View {
   var body: some View {
-    VStack {
-      IntDisplay(value: support.currentValue)
-      HStack(spacing: 42) {
+    VStack (spacing: 30) {
+      IntDisplay(value: currentValue)
+      HStack (spacing: horizontalSpace) {
         SymbolButton("arrow.left",
-                     action: support.back)
+                     action: back)
         SymbolButton("arrow.right",
-                     action: support.forward)
+                     action: forward)
       }
+      DesignHelper(currentValue: $horizontalSpace,
+                   range: 0...100)
     }
   }
 }
 
+extension ContentView {
+  private func back() {
+    currentValue -= 1
+  }
+  private func forward() {
+    currentValue += 1
+  }
+}
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView(support: ContentViewSupport())
-      .previewLayout(.sizeThatFits)
+    ContentView()
   }
 }

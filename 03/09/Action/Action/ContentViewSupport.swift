@@ -1,4 +1,4 @@
-import SwiftUI
+import Combine
 
 class ContentViewSupport: ObservableObject {
   @Published private var model = Model(value: 0)

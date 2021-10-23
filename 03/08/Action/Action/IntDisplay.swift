@@ -6,13 +6,13 @@ struct IntDisplay {
 
 extension IntDisplay: View {
   var body: some View {
-    StringDisplay(value: value.description)
+    Text(value.description)
+      .modifier(DisplayModifier())
   }
 }
 
 struct IntDisplay_Previews: PreviewProvider {
-    static var previews: some View {
-      IntDisplay(value: 7)
-        .previewLayout(.sizeThatFits)
-    }
+  static var previews: some View {
+    IntDisplay(value: 7)
+  }
 }

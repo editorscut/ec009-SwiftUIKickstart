@@ -6,18 +6,17 @@ struct ContentView {
 
 extension ContentView: View {
   var body: some View {
-    VStack {
-      StringDisplay(value: currentValue.spelledOut)
-      HStack {
+    VStack (spacing: 30) {
+      IntDisplay(value: currentValue)
+      HStack (spacing: 20) {
         Button(action: back) {
           Image(systemName: "arrow.left")
         }
-        .padding()
         Button(action: forward) {
           Image(systemName: "arrow.right")
         }
-        .padding()
       }
+      .buttonStyle(DoubleBorderButtonStyle())
     }
   }
 }
@@ -34,6 +33,5 @@ extension ContentView {
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
-      .previewLayout(.sizeThatFits)
   }
 }

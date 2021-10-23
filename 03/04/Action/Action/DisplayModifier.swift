@@ -5,7 +5,5 @@ struct DisplayModifier: ViewModifier {
     content
       .font(.largeTitle)
       .foregroundColor(.secondary)
-      .padding()
   }
 }
-

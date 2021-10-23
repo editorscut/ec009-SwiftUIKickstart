@@ -6,15 +6,13 @@ struct ContentView {
 
 extension ContentView: View {
   var body: some View {
-    VStack {
+    VStack (spacing: 30) {
       IntDisplay(value: currentValue)
-      HStack {
+      HStack (spacing: 20) {
         SymbolButton("arrow.left",
                      action: back)
-        .padding()
         SymbolButton("arrow.right",
                      action: forward)
-        .padding()
       }
     }
   }
@@ -32,6 +30,5 @@ extension ContentView {
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
-      .previewLayout(.sizeThatFits)
   }
 }

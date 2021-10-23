@@ -1,48 +1,39 @@
 import SwiftUI
 
-let increments = [1, 2, 3, 5, 10]
-
 struct ContentView {
   @State private var currentValue = 0
-  @State private var incrementIndex = 0
+  @State private var horizontalSpace = 0.0
 }
 
 extension ContentView: View {
   var body: some View {
-    VStack {
+    VStack (spacing: 30) {
       IntDisplay(value: currentValue)
-      HStack {
+      HStack (spacing: horizontalSpace) {
         SymbolButton("arrow.left",
                      action: back)
-          .padding()
         SymbolButton("arrow.right",
                      action: forward)
-          .padding()
       }
-      Picker("Choose the increment",
-             selection: $incrementIndex){
-        ForEach(increments.indices) {index in
-          Text("by \(increments[index])")
-        }
-      }
-      .pickerStyle(SegmentedPickerStyle())
-      .padding()
+      Text(horizontalSpace.description)
+      Slider(value: $horizontalSpace,
+             in: 0...100)
+        .padding(.horizontal)
     }
   }
 }
 
 extension ContentView {
   private func back() {
-    currentValue -= increments[incrementIndex]
+    currentValue -= 1
   }
   private func forward() {
-    currentValue += increments[incrementIndex]
+    currentValue += 1
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
-      .previewLayout(.sizeThatFits)
   }
 }

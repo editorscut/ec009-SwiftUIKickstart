@@ -9,13 +9,11 @@ extension IntDisplay: View {
     Text(value.description)
       .font(.largeTitle)
       .foregroundColor(.secondary)
-      .padding()
   }
 }
 
 struct IntDisplay_Previews: PreviewProvider {
-    static var previews: some View {
-      IntDisplay(value: 7)
-        .previewLayout(.sizeThatFits)
-    }
+  static var previews: some View {
+    IntDisplay(value: 7)
+  }
 }

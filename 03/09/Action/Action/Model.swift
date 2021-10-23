@@ -1,5 +1,5 @@
 struct Model {
-  let value: Int
+  let value: Int 
 }
 
 extension Model {

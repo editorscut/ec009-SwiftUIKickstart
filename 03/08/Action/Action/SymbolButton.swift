@@ -13,9 +13,10 @@ struct SymbolButton {
 
 extension SymbolButton: View {
   var body: some View {
-    Button(action: action){
+    Button(action: action) {
       Image(systemName: symbolName)
     }
+    .buttonStyle(DoubleBorderButtonStyle())
   }
 }
 
