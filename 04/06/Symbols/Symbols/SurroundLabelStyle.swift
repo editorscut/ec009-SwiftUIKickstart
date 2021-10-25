@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SurroundStyle: LabelStyle {
+struct SurroundLabelStyle: LabelStyle {
   func makeBody(configuration: Configuration) -> some View {
     VStack {
       HStack(spacing: 20) {

@@ -2,9 +2,9 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    VStack(spacing: 20) {
-      ForEach(symbols){symbol in
-        SystemLabel(name: symbol.name)
+    VStack {
+      ForEach(symbols) {symbol in
+        SystemLabel(symbol.name)
       }
     }
   }
@@ -15,4 +15,3 @@ struct ContentView_Previews: PreviewProvider {
     ContentView()
   }
 }
-

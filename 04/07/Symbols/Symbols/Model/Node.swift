@@ -1,9 +1,6 @@
 import Foundation
 
-let roots
-  = root(of: symbolNames)
-  .map(Node.init)
-
+let roots = root(of: symbolNames).map(Node.init)
 
 struct Node: Identifiable {
   let id = UUID()
@@ -17,12 +14,10 @@ struct Node: Identifiable {
       childNodes = nil
     } else {
       childNodes
-        = subNodeNames(for: name)
+      = subNodeNames(for: name)
         .map{nextNode in
           Node(name: "\(name).\(nextNode)")
         }
     }
   }
 }
-
-

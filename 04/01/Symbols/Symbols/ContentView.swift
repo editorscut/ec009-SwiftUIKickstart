@@ -2,7 +2,8 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    SystemLabel(name: symbolNames[104])
+    SystemLabel(symbolNames[104])
+      .labelStyle(SurroundLabelStyle())
   }
 }
 
@@ -11,4 +12,3 @@ struct ContentView_Previews: PreviewProvider {
     ContentView()
   }
 }
-

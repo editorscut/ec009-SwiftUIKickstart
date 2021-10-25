@@ -1,13 +1,15 @@
 import SwiftUI
 
-struct ContentView: View {
-  let columns = [GridItem(.adaptive(minimum: 60))]
-  
+struct ContentView {
+  let columns = [GridItem(.adaptive(minimum: 60,
+                                    maximum: 100))]
+}
+
+extension ContentView: View {
   var body: some View {
     ScrollView {
-      LazyVGrid(columns: columns,
-                spacing: 20){
-        ForEach(symbols){symbol in
+      LazyVGrid(columns: columns) {
+        ForEach(symbols) {symbol in
           Image(systemName: symbol.name)
             .resizable()
             .scaledToFit()
@@ -17,9 +19,9 @@ struct ContentView: View {
   }
 }
 
+
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
   }
 }
-
