@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct ContentView {
-  @EnvironmentObject var accent: Accent
 }
 
 extension ContentView: View {
@@ -15,16 +14,14 @@ extension ContentView: View {
       HistoryView()
         .tabItem {
           Label("History",
-                systemImage: "tray.full")
+          systemImage: "tray.full")
         }
     }
-    .accentColor(accent.color)
   }
 }
 
-
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView().environmentObject(Accent())
+    ContentView()
   }
 }

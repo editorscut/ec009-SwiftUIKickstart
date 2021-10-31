@@ -1,18 +1,16 @@
 import Foundation
 
 class CurrentViewSupport: ObservableObject {
-  @Published var rating: String = ""
-  private let minRating = 0
-  private let maxRating = 100
+  @Published var rating = ""
+  let minimumRating = 0
+  let maximumRating = 100
 }
 
 extension CurrentViewSupport {
-  var prompt: String {
-    "Range \(minRating)-\(maxRating)"
-  }
-  
-  func action() {
-    print(rating)
+  func clearRating() {
     rating = ""
+  }
+  var prompt: String {
+    "Range \(minimumRating) - \(maximumRating)"
   }
 }

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView {
-  @StateObject private var history = History()
+  let history = History()
 }
 
 extension ContentView: View {
@@ -15,15 +15,14 @@ extension ContentView: View {
       HistoryView(history: history)
         .tabItem {
           Label("History",
-                systemImage: "tray.full")
+          systemImage: "tray.full")
         }
     }
   }
 }
 
-
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView().environmentObject(Accent())
+    ContentView()
   }
 }

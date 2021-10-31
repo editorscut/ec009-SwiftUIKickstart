@@ -6,21 +6,35 @@ struct CurrentView {
 
 extension CurrentView: View {
   var body: some View {
-    VStack(spacing: 20) {
+    VStack(spacing: 40) {
       Text(support.textInputWarning)
-        .foregroundColor(support.warningShouldBeVisible
-                          ? .red
-                          : .clear)
+        .foregroundColor(support.warningNotDisplayed
+                         ? .clear
+                         : .red)
       TextField(support.prompt,
                 text: $support.rating)
+        .onSubmit {
+          if support.inputIsValid {
+            recordRating()
+          }
+        }
         .modifier(TextEntryModifier())
       
       Button("Record Rating",
-             action: support.action)
+             action: recordRating)
         .disabled(support.inputIsNotValid)
     }
   }
 }
+
+extension CurrentView {
+  private func recordRating() {
+    print(support.rating)
+    support.clearRating()
+  }
+}
+
+
 
 struct CurrentView_Previews: PreviewProvider {
   static var previews: some View {

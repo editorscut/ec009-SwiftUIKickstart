@@ -1,6 +1,9 @@
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView {
+}
+
+extension ContentView: View {
   var body: some View {
     TabView {
       CurrentView()
@@ -11,12 +14,11 @@ struct ContentView: View {
       HistoryView()
         .tabItem {
           Label("History",
-                systemImage: "tray.full")
+          systemImage: "tray.full")
         }
     }
   }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {

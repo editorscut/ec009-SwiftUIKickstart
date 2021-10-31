@@ -2,10 +2,13 @@ import SwiftUI
 
 @main
 struct CheckInApp: App {
+  @StateObject private var accent = Accent()
+  
   var body: some Scene {
     WindowGroup {
       ContentView()
-        .environmentObject(Accent())
+        .accentColor(accent.color)
+        .environmentObject(accent)
     }
   }
 }

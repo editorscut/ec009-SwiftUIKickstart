@@ -2,23 +2,26 @@ import SwiftUI
 
 struct HistoryView {
   @State private var isSheetDisplayed = false
-  @EnvironmentObject private var accent: Accent
+  @State private var currentAccentColor: Color = .accentColor
 }
 
 extension HistoryView: View {
   var body: some View {
-    Button("Change accent color",
-           action: {isSheetDisplayed = true})
-      .sheet(isPresented: $isSheetDisplayed){
-        AccentColorPicker(accentColor: $accent.color,
-                          isSheetDisplayed: $isSheetDisplayed)
-          .environmentObject(accent)
+    VStack {
+      Text("History View")
+      Button("Change accent color") {
+        isSheetDisplayed = true
       }
+    }
+    .sheet(isPresented: $isSheetDisplayed) {
+      AccentColorPicker(customAccentColor: $currentAccentColor,
+                        isSheetDisplayed: $isSheetDisplayed)
+    }
   }
 }
 
 struct HistoryView_Previews: PreviewProvider {
-    static var previews: some View {
-        HistoryView()
-    }
+  static var previews: some View {
+    HistoryView()
+  }
 }

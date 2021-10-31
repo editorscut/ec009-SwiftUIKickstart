@@ -3,8 +3,8 @@ import SwiftUI
 struct TextEntryModifier: ViewModifier {
   func body(content: Content) -> some View {
     content
-      .textFieldStyle(RoundedBorderTextFieldStyle())
+      .textFieldStyle(.roundedBorder)
       .multilineTextAlignment(.center)
-      .padding(.horizontal)
+      .padding(.horizontal, 40)
   }
 }

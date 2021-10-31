@@ -1,32 +1,34 @@
 import Foundation
 
 class CurrentViewSupport: ObservableObject {
-  @Published var rating: String = ""
-  private var history = History()
-  private let minRating = 0
-  private let maxRating = 100
+  @Published var rating = ""
+  let minimumRating = 0
+  let maximumRating = 100
 }
 
 extension CurrentViewSupport {
-  var inputIsNotValid: Bool {
-    guard let int = Int(rating) else {return true}
-    return int < minRating || int > maxRating
-  }
-  
-  var textInputWarning: String {
-    "Enter an Int between 0 and 100"
-  }
-  
-  var warningShouldBeVisible: Bool {
-    inputIsNotValid && !rating.isEmpty
+  func clearRating() {
+    rating = ""
   }
   
   var prompt: String {
-    "Range \(minRating)-\(maxRating)"
+    "\(minimumRating) - \(maximumRating)"
   }
   
-  func action() {
-    history.add(rating)
-    rating = ""
+  var inputIsNotValid: Bool {
+    guard let int = Int(rating) else {return true}
+    return int < minimumRating || int > maximumRating
+  }
+  
+  var inputIsValid: Bool {
+    !inputIsNotValid
+  }
+  
+  var textInputWarning: String {
+    "Enter an Int between " + prompt
+  }
+  
+  var warningNotDisplayed: Bool {
+    rating.isEmpty || inputIsValid
   }
 }
