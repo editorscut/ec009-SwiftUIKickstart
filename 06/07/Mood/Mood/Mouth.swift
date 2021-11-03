@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct Mouth {
-  let size: CGFloat
+  let size: Double
   let value: Double
 }
 
@@ -30,15 +30,15 @@ extension Mouth {
 }
 
 extension Mouth {
-  var width: CGFloat {
+  var width: Double {
     size * 3 / 4
   }
   
-  var height: CGFloat {
+  var height: Double {
     size / 4
   }
   
-  var lineWidth: CGFloat {
+  var lineWidth: Double {
     size / 40
   }
   
@@ -57,8 +57,8 @@ extension Mouth {
             y: CGFloat(value) * height / 100)
   }
   
-  var yForControlPoints: CGFloat {
-    CGFloat(value) * height / 100
+  var yForControlPoints: Double {
+      CGFloat(value) * height / 100
   }
   var leftControlPoint: CGPoint {
     CGPoint(x: width / 4,
@@ -76,4 +76,3 @@ struct Mouth_Previews: PreviewProvider {
           value: 60)
   }
 }
-

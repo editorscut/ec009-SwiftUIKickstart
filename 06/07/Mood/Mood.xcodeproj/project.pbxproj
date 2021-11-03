@@ -3,33 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		628B60E0252F7F140017CA2B /* MoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B60DF252F7F140017CA2B /* MoodApp.swift */; };
-		628B60E2252F7F140017CA2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B60E1252F7F140017CA2B /* ContentView.swift */; };
-		628B60E4252F7F170017CA2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628B60E3252F7F170017CA2B /* Assets.xcassets */; };
-		628B60E7252F7F170017CA2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628B60E6252F7F170017CA2B /* Preview Assets.xcassets */; };
-		628B60F1252FA7340017CA2B /* SwiftyMoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B60F0252FA7340017CA2B /* SwiftyMoji.swift */; };
-		628B60F5252FB6F30017CA2B /* Eyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B60F4252FB6F30017CA2B /* Eyes.swift */; };
-		628B60FB252FF5820017CA2B /* Mouth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B60FA252FF5820017CA2B /* Mouth.swift */; };
+		623803412730139A00F116D5 /* MoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623803402730139A00F116D5 /* MoodApp.swift */; };
+		623803432730139A00F116D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623803422730139A00F116D5 /* ContentView.swift */; };
+		623803452730139C00F116D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623803442730139C00F116D5 /* Assets.xcassets */; };
+		623803482730139C00F116D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623803472730139C00F116D5 /* Preview Assets.xcassets */; };
+		624444B22730C63400EF68F9 /* SwiftyMoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624444B12730C63400EF68F9 /* SwiftyMoji.swift */; };
+		624444B42730CB6200EF68F9 /* Eyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624444B32730CB6200EF68F9 /* Eyes.swift */; };
+		624444B6273233EC00EF68F9 /* Mouth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624444B5273233EC00EF68F9 /* Mouth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		628B60DC252F7F140017CA2B /* Mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mood.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		628B60DF252F7F140017CA2B /* MoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodApp.swift; sourceTree = "<group>"; };
-		628B60E1252F7F140017CA2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		628B60E3252F7F170017CA2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		628B60E6252F7F170017CA2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		628B60E8252F7F170017CA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		628B60F0252FA7340017CA2B /* SwiftyMoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMoji.swift; sourceTree = "<group>"; };
-		628B60F4252FB6F30017CA2B /* Eyes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eyes.swift; sourceTree = "<group>"; };
-		628B60FA252FF5820017CA2B /* Mouth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouth.swift; sourceTree = "<group>"; };
+		6238033D2730139A00F116D5 /* Mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		623803402730139A00F116D5 /* MoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodApp.swift; sourceTree = "<group>"; };
+		623803422730139A00F116D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		623803442730139C00F116D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		623803472730139C00F116D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		624444B12730C63400EF68F9 /* SwiftyMoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMoji.swift; sourceTree = "<group>"; };
+		624444B32730CB6200EF68F9 /* Eyes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eyes.swift; sourceTree = "<group>"; };
+		624444B5273233EC00EF68F9 /* Mouth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		628B60D9252F7F140017CA2B /* Frameworks */ = {
+		6238033A2730139A00F116D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,41 +38,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		628B60D3252F7F140017CA2B = {
+		623803342730139A00F116D5 = {
 			isa = PBXGroup;
 			children = (
-				628B60DE252F7F140017CA2B /* Mood */,
-				628B60DD252F7F140017CA2B /* Products */,
+				6238033F2730139A00F116D5 /* Mood */,
+				6238033E2730139A00F116D5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		628B60DD252F7F140017CA2B /* Products */ = {
+		6238033E2730139A00F116D5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				628B60DC252F7F140017CA2B /* Mood.app */,
+				6238033D2730139A00F116D5 /* Mood.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		628B60DE252F7F140017CA2B /* Mood */ = {
+		6238033F2730139A00F116D5 /* Mood */ = {
 			isa = PBXGroup;
 			children = (
-				628B60DF252F7F140017CA2B /* MoodApp.swift */,
-				628B60E1252F7F140017CA2B /* ContentView.swift */,
-				628B60E3252F7F170017CA2B /* Assets.xcassets */,
-				628B60E8252F7F170017CA2B /* Info.plist */,
-				628B60E5252F7F170017CA2B /* Preview Content */,
-				628B60F0252FA7340017CA2B /* SwiftyMoji.swift */,
-				628B60F4252FB6F30017CA2B /* Eyes.swift */,
-				628B60FA252FF5820017CA2B /* Mouth.swift */,
+				623803402730139A00F116D5 /* MoodApp.swift */,
+				623803422730139A00F116D5 /* ContentView.swift */,
+				623803442730139C00F116D5 /* Assets.xcassets */,
+				623803462730139C00F116D5 /* Preview Content */,
+				624444B12730C63400EF68F9 /* SwiftyMoji.swift */,
+				624444B32730CB6200EF68F9 /* Eyes.swift */,
+				624444B5273233EC00EF68F9 /* Mouth.swift */,
 			);
 			path = Mood;
 			sourceTree = "<group>";
 		};
-		628B60E5252F7F170017CA2B /* Preview Content */ = {
+		623803462730139C00F116D5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				628B60E6252F7F170017CA2B /* Preview Assets.xcassets */,
+				623803472730139C00F116D5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -81,13 +79,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		628B60DB252F7F140017CA2B /* Mood */ = {
+		6238033C2730139A00F116D5 /* Mood */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 628B60EB252F7F170017CA2B /* Build configuration list for PBXNativeTarget "Mood" */;
+			buildConfigurationList = 6238034B2730139C00F116D5 /* Build configuration list for PBXNativeTarget "Mood" */;
 			buildPhases = (
-				628B60D8252F7F140017CA2B /* Sources */,
-				628B60D9252F7F140017CA2B /* Frameworks */,
-				628B60DA252F7F140017CA2B /* Resources */,
+				623803392730139A00F116D5 /* Sources */,
+				6238033A2730139A00F116D5 /* Frameworks */,
+				6238033B2730139A00F116D5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -95,76 +93,77 @@
 			);
 			name = Mood;
 			productName = Mood;
-			productReference = 628B60DC252F7F140017CA2B /* Mood.app */;
+			productReference = 6238033D2730139A00F116D5 /* Mood.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		628B60D4252F7F140017CA2B /* Project object */ = {
+		623803352730139A00F116D5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					628B60DB252F7F140017CA2B = {
-						CreatedOnToolsVersion = 12.0;
+					6238033C2730139A00F116D5 = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = 628B60D7252F7F140017CA2B /* Build configuration list for PBXProject "Mood" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 623803382730139A00F116D5 /* Build configuration list for PBXProject "Mood" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 628B60D3252F7F140017CA2B;
-			productRefGroup = 628B60DD252F7F140017CA2B /* Products */;
+			mainGroup = 623803342730139A00F116D5;
+			productRefGroup = 6238033E2730139A00F116D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				628B60DB252F7F140017CA2B /* Mood */,
+				6238033C2730139A00F116D5 /* Mood */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		628B60DA252F7F140017CA2B /* Resources */ = {
+		6238033B2730139A00F116D5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				628B60E7252F7F170017CA2B /* Preview Assets.xcassets in Resources */,
-				628B60E4252F7F170017CA2B /* Assets.xcassets in Resources */,
+				623803482730139C00F116D5 /* Preview Assets.xcassets in Resources */,
+				623803452730139C00F116D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		628B60D8252F7F140017CA2B /* Sources */ = {
+		623803392730139A00F116D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				628B60E2252F7F140017CA2B /* ContentView.swift in Sources */,
-				628B60E0252F7F140017CA2B /* MoodApp.swift in Sources */,
-				628B60F1252FA7340017CA2B /* SwiftyMoji.swift in Sources */,
-				628B60F5252FB6F30017CA2B /* Eyes.swift in Sources */,
-				628B60FB252FF5820017CA2B /* Mouth.swift in Sources */,
+				623803432730139A00F116D5 /* ContentView.swift in Sources */,
+				623803412730139A00F116D5 /* MoodApp.swift in Sources */,
+				624444B22730C63400EF68F9 /* SwiftyMoji.swift in Sources */,
+				624444B42730CB6200EF68F9 /* Eyes.swift in Sources */,
+				624444B6273233EC00EF68F9 /* Mouth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		628B60E9252F7F170017CA2B /* Debug */ = {
+		623803492730139C00F116D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -209,7 +208,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -219,13 +218,13 @@
 			};
 			name = Debug;
 		};
-		628B60EA252F7F170017CA2B /* Release */ = {
+		6238034A2730139C00F116D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -264,7 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -274,45 +273,59 @@
 			};
 			name = Release;
 		};
-		628B60EC252F7F170017CA2B /* Debug */ = {
+		6238034C2730139C00F116D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mood/Preview Content\"";
 				DEVELOPMENT_TEAM = MG5SW9CY8D;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Mood/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dimsumthinking.Mood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		628B60ED252F7F170017CA2B /* Release */ = {
+		6238034D2730139C00F116D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mood/Preview Content\"";
 				DEVELOPMENT_TEAM = MG5SW9CY8D;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Mood/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dimsumthinking.Mood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,25 +334,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		628B60D7252F7F140017CA2B /* Build configuration list for PBXProject "Mood" */ = {
+		623803382730139A00F116D5 /* Build configuration list for PBXProject "Mood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				628B60E9252F7F170017CA2B /* Debug */,
-				628B60EA252F7F170017CA2B /* Release */,
+				623803492730139C00F116D5 /* Debug */,
+				6238034A2730139C00F116D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		628B60EB252F7F170017CA2B /* Build configuration list for PBXNativeTarget "Mood" */ = {
+		6238034B2730139C00F116D5 /* Build configuration list for PBXNativeTarget "Mood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				628B60EC252F7F170017CA2B /* Debug */,
-				628B60ED252F7F170017CA2B /* Release */,
+				6238034C2730139C00F116D5 /* Debug */,
+				6238034D2730139C00F116D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 628B60D4252F7F140017CA2B /* Project object */;
+	rootObject = 623803352730139A00F116D5 /* Project object */;
 }

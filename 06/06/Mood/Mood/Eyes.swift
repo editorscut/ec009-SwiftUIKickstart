@@ -15,8 +15,7 @@ extension Eyes: View {
     .frame(width: size * 3 / 4,
            height: size / 12,
            alignment: .center)
-    .offset(x: 0,
-            y: -size / 8)
+    .offset(x: 0, y: -size / 8)
   }
 }
 

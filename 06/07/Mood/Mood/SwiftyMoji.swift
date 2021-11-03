@@ -7,22 +7,17 @@ struct SwiftyMoji {
 extension SwiftyMoji: View {
   var body: some View {
     GeometryReader {proxy in
-      let diameter = minDimension(for: proxy)
+      let size = proxy.frame(in: .local)
+      let minDimension = min(size.width, size.height)
+      
       ZStack {
         Circle()
           .foregroundColor(color)
-        Eyes(size: diameter)
-        Mouth(size: diameter,
+        Eyes(size: minDimension)
+        Mouth(size: minDimension,
               value: value)
       }
     }
-  }
-}
-
-extension SwiftyMoji {
-  private func minDimension(for proxy: GeometryProxy) -> CGFloat {
-    let size = proxy.frame(in: .local).size
-    return min(size.width, size.height)
   }
 }
 

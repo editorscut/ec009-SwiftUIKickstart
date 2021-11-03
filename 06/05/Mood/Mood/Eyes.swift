@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct Eyes {
-  let size: CGFloat
+  
 }
 
 extension Eyes: View {
@@ -12,16 +12,15 @@ extension Eyes: View {
       Circle()
     }
     .foregroundColor(.black)
-    .frame(width: size * 3 / 4,
-           height: size / 12,
+    .frame(width: 300,
+           height: 20,
            alignment: .center)
-    .offset(x: 0,
-            y: -size / 8)
+    .offset(x: 0, y: -40)
   }
 }
 
 struct Eyes_Previews: PreviewProvider {
   static var previews: some View {
-    Eyes(size: 100)
+    Eyes()
   }
 }

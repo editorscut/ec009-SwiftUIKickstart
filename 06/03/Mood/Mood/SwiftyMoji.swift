@@ -6,11 +6,8 @@ struct SwiftyMoji {
 
 extension SwiftyMoji: View {
   var body: some View {
-    ZStack {
-      Circle()
-        .foregroundColor(color)
-      Eyes()
-    }
+    Circle()
+      .foregroundColor(color)
   }
 }
 
