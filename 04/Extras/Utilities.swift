@@ -1,5 +1,7 @@
 import Foundation
 
+private let separator: Character = "."
+
 extension Array where Element: Hashable{
   var toSet: Set<Element> {
     Set(self)
@@ -16,7 +18,7 @@ extension String {
 
 func root(of symbolNames: [String]) -> [String] {
   symbolNames
-    .map{$0.split(separator: ".")}
+    .map{$0.split(separator: separator)}
     .compactMap(\.first)
     .map(String.init)
     .toSet
@@ -33,10 +35,10 @@ func subNodeNames(for name: String) -> [String] {
 }
 
 
-func symbolNames(startingWith root: String) -> [String] {
+func symbolNames(startingWith nodes: String) -> [String] {
   symbolNames
     .filter{symbolName in
-      symbolName.starts(with: root)
+      symbolName.split(separator: separator).starts(with: nodes.split(separator: separator))
     }
 }
 
