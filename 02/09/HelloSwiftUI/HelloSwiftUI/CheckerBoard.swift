@@ -1,50 +1,63 @@
 import SwiftUI
 
-struct CheckerBoard<A: View, B: View> {
-  let firstView: A
-  let secondView: B
-}
-
-extension CheckerBoard: View {
+struct CheckerBoard<FirstView: View,
+                    SecondView: View>: View {
+  let firstView: FirstView
+  let secondView: SecondView
+  
   var body: some View {
     VStack {
       HStack {
         firstView
-          .frame(minWidth: 0,
+          .frame(//minWidth: 0,
                  maxWidth: .infinity)
+//          .aspectRatio(1,
+//                       contentMode: .fit)
         secondView
-          .frame(minWidth: 0,
+          .frame(//minWidth: 0,
                  maxWidth: .infinity)
+//          .aspectRatio(1,
+//                       contentMode: .fit)
       }
       HStack {
         secondView
-          .frame(minWidth: 0,
+          .frame(//minWidth: 0,
                  maxWidth: .infinity)
+//          .aspectRatio(1,
+//                       contentMode: .fit)
         firstView
-          .frame(minWidth: 0,
+          .frame(//minWidth: 0,
                  maxWidth: .infinity)
+//          .aspectRatio(1,
+//                       contentMode: .fit)
       }
     }
+    .border(.primary, width: 4)
   }
 }
 
 extension CheckerBoard {
-  init(@CheckerBoardBuilder builder: () -> (A, B)) {
+  init(@CheckerBoardBuilder builder: () -> (FirstView, SecondView)) {
     (firstView, secondView) = builder()
   }
 }
 
 @resultBuilder
 struct CheckerBoardBuilder {
-  static func buildBlock<A: View, B: View>(_ firstView: A,
-                                           _ secondView: B) -> (A, B) {
+  static func buildBlock<A: View>(_ firstView: A) -> (A, Rectangle) {
+    (firstView, Rectangle())
+  }
+  
+  static func buildBlock<A: View,
+                          B: View>(_ firstView: A,
+                                   _ secondView: B) -> (A, B) {
     (firstView, secondView)
   }
 }
 
-struct CheckerBoard_Previews: PreviewProvider {
-  static var previews: some View {
-    CheckerBoard(firstView: Text("Kickstart"),
-                 secondView: Rectangle())
+#Preview {
+  CheckerBoard {
+    Text("Kickstart")
+    Image("Cover")
   }
 }

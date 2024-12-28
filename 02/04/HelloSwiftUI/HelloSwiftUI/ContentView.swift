@@ -1,8 +1,6 @@
 import SwiftUI
 
 struct ContentView: View {
-  let hasImage = true
-  
   var body: some View {
     Image("Cover")
       .resizable()
@@ -11,8 +9,6 @@ struct ContentView: View {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
-  }
+#Preview {
+  ContentView()
 }

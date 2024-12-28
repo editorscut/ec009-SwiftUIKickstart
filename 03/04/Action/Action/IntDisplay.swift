@@ -1,18 +1,16 @@
 import SwiftUI
 
-struct IntDisplay {
+struct IntDisplay: View {
   let value: Int
 }
 
-extension IntDisplay: View {
+extension IntDisplay {
   var body: some View {
     Text(value.description)
       .modifier(DisplayModifier())
   }
 }
 
-struct IntDisplay_Previews: PreviewProvider {
-  static var previews: some View {
-    IntDisplay(value: 7)
-  }
+#Preview {
+  IntDisplay(value: 7)
 }

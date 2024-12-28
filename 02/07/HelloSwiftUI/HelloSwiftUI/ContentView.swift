@@ -3,23 +3,19 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     Text("A SwiftUI Kickstart")
-      .background(Color.primary)
+      .background(.yellow)
       .padding()
-      .background(Color.blue)
-      .font(.largeTitle)
+      .background(.blue)
+      .font(.title)
       .padding()
-      .background(Color.mint)
-      .foregroundColor(.purple)
+      .background(.mint)
+      .foregroundStyle(.purple)
       .padding()
-      .background(Color.secondary.opacity(0.4))
-      .border(Color.red,
-              width: 5)
+      .background(.red.opacity(0.2))
+      .border(.red, width: 5)
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
-      .previewLayout(.sizeThatFits)
-  }
+#Preview {
+  ContentView()
 }

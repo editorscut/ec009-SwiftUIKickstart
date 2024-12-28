@@ -4,6 +4,11 @@ struct DisplayModifier: ViewModifier {
   func body(content: Content) -> some View {
     content
       .font(.largeTitle)
-      .foregroundColor(.secondary)
+      .foregroundStyle(.secondary)
   }
+}
+
+#Preview {
+  Text("Hello, world!")
+    .modifier(DisplayModifier())
 }

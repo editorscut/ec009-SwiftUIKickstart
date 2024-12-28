@@ -2,14 +2,18 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    VStack (spacing: 30) {
-      Text("Hello")
-      HStack (spacing: 20) {
-        Button(action: back) {
-          Image(systemName: "arrow.left")
+    VStack {
+     Text("Hello")
+      HStack(spacing: 20) {
+        Button {
+          back()
+        } label: {
+          Image(systemName: "arrow.backward")
         }
-        Button(action: forward) {
-          Image(systemName: "arrow.right")
+        Button {
+          forward()
+        } label: {
+          Image(systemName: "arrow.forward")
         }
       }
     }
@@ -25,8 +29,6 @@ extension ContentView {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
-  }
+#Preview {
+  ContentView()
 }

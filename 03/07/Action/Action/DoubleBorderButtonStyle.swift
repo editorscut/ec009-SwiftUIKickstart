@@ -9,3 +9,8 @@ struct DoubleBorderButtonStyle: ButtonStyle {
       .border(.mint)
   }
 }
+
+#Preview {
+  Button("Hello, world!"){ }
+    .buttonStyle(DoubleBorderButtonStyle())
+}

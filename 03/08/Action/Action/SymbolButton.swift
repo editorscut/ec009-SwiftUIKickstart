@@ -1,17 +1,17 @@
 import SwiftUI
 
-struct SymbolButton {
+struct SymbolButton: View {
   let symbolName: String
   let action: () -> Void
   
   init(_ symbolName: String,
-       action: @escaping () -> Void = {}) {
+       action: @escaping () -> Void) {
     self.symbolName = symbolName
     self.action = action
   }
 }
 
-extension SymbolButton: View {
+extension SymbolButton {
   var body: some View {
     Button(action: action) {
       Image(systemName: symbolName)
@@ -20,8 +20,7 @@ extension SymbolButton: View {
   }
 }
 
-struct SymbolButton_Previews: PreviewProvider {
-  static var previews: some View {
-    SymbolButton("questionmark")
-  }
+#Preview {
+  SymbolButton("questionmark",
+               action: {})
 }

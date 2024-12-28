@@ -7,13 +7,11 @@ struct ContentView: View {
         .resizable()
         .scaledToFit()
       Text("Kickstart")
+        .padding()
     }
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
-      .previewLayout(.sizeThatFits)
-  }
+#Preview {
+  ContentView()
 }

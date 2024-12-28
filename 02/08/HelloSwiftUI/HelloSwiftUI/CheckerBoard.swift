@@ -1,25 +1,28 @@
 import SwiftUI
 
-struct CheckerBoard {
+struct CheckerBoard: View {
   let firstView: Text
   let secondView = Rectangle()
-}
-
-extension CheckerBoard: View {
+  
   var body: some View {
+    let first = firstView
+      .frame(maxWidth: .infinity)
+      .aspectRatio(1, contentMode: .fit)
+    let second = secondView
+      .frame(maxWidth: .infinity)
+      .aspectRatio(1, contentMode: .fit)
+    
     VStack {
       HStack {
-        firstView
-          .frame(minWidth: 0, maxWidth: .infinity)
-        secondView
+        first
+        second
       }
       HStack {
-        secondView
-        firstView
-          .frame(minWidth: 0,
-                 maxWidth: .infinity)
+        second
+        first
       }
     }
+    .border(.primary, width: 4)
   }
 }
 
@@ -36,8 +39,8 @@ struct CheckerBoardBuilder {
   }
 }
 
-struct CheckerBoard_Previews: PreviewProvider {
-  static var previews: some View {
-    CheckerBoard(firstView: Text("Kickstart"))
+#Preview {
+  CheckerBoard {
+    Text("Kickstart")
   }
 }

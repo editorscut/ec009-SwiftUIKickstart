@@ -1,36 +1,30 @@
 import SwiftUI
 
-struct ContentView {
+struct ContentView: View {
   @State private var currentValue = 0
 }
 
-extension ContentView: View {
+extension ContentView {
   var body: some View {
-    VStack (spacing: 30) {
+    VStack(spacing: 30) {
       IntDisplay(value: currentValue)
-      HStack (spacing: 20) {
-        Button(action: back) {
-          Image(systemName: "arrow.left")
+      HStack(spacing: 20) {
+        Button {
+          currentValue -= 1
+        } label: {
+          Image(systemName: "arrow.backward")
         }
-        Button(action: forward) {
-          Image(systemName: "arrow.right")
+        Button {
+          currentValue += 1
+        } label: {
+          Image(systemName: "arrow.forward")
         }
       }
     }
   }
 }
 
-extension ContentView {
-  private func back() {
-    currentValue -= 1
-  }
-  private func forward() {
-    currentValue += 1
-  }
-}
 
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
-  }
+#Preview {
+  ContentView()
 }
